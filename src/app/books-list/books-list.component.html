@@ -7,3 +7,8 @@
        <span>{{ book.year }}</span>
     </li>
 </ul>
+
+<label>Title <input [(ngModel)]="newTitle" type="text"></label>
+<label>Author<input [(ngModel)]="newAuthor" type="text"></label>
+<label>Year<input [(ngModel)]="newYear" type="text"></label>
+<button class="btn-primary" (click)="addBook()">Add to List</button>
